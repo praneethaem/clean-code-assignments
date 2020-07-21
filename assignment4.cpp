@@ -9,7 +9,7 @@ class Icon
   float speed, glow, energy;
   int x, y;
   public :
-  static void move(subtype Icon_type);
+  static void Icon_select(subtype Icon_type);
 }Icon_obj;
 
 
@@ -37,7 +37,7 @@ class hopper :public Icon
   void hopper(){}
 }hopper_obj;
 
-void move(subtype Icon_type)
+void Icon_select(subtype Icon_type)
 {
 
   if(Icon_type == 1)
@@ -54,11 +54,11 @@ void move(subtype Icon_type)
   }
 }
 
-class Icon_select 
+class move 
 {
-  Icon_select()
+  move()
   {
    subtype type = 1;
-   Icon_obj.move(type) ;
+   Icon_obj.Icon_select(type) ;
    }
 }
